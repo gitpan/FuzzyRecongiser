@@ -1,0 +1,73 @@
+{
+   "abstract" : "A set of modules and scripts for parsing OWL ontologies",
+   "author" : [
+      "Emma Hastings <ehastings@cpan.org>"
+   ],
+   "dynamic_config" : 1,
+   "generated_by" : "Module::Build version 0.38, CPAN::Meta::Converter version 2.112150",
+   "license" : [
+      "open_source"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "FuzzyRecongiser",
+   "prereqs" : {
+      "build" : {
+         "requires" : {
+            "File::Temp" : 0,
+            "Test::More" : 0
+         }
+      },
+      "configure" : {
+         "requires" : {
+            "Module::Build" : "0.38"
+         }
+      },
+      "runtime" : {
+         "recommends" : {
+            "Benchmark" : 0,
+            "GO::Parser" : 0,
+            "Getopt::Long" : 0,
+            "IO::File" : 0,
+            "IO::Handle" : 0
+         },
+         "requires" : {
+            "List::Util" : 0,
+            "Log::Log4perl" : 0,
+            "Moose" : "0.89",
+            "XML::Parser" : "2.34"
+         }
+      }
+   },
+   "provides" : {
+      "EBI::FGPT::FuzzyRecogniser" : {
+         "file" : "lib/EBI/FGPT/FuzzyRecogniser.pm",
+         "version" : "0.01"
+      },
+      "EBI::FGPT::FuzzyRecogniser::OntologyTerm" : {
+         "file" : "lib/EBI/FGPT/FuzzyRecogniser/OntologyTerm.pm",
+         "version" : "0.01"
+      },
+      "EBI::FGPT::FuzzyRecogniser::OntologyTerm::Annotation" : {
+         "file" : "lib/EBI/FGPT/FuzzyRecogniser/OntologyTerm/Annotation.pm",
+         "version" : "0.01"
+      },
+      "EBI::FGPT::FuzzyRecogniser::OntologyTerm::Label" : {
+         "file" : "lib/EBI/FGPT/FuzzyRecogniser/OntologyTerm/Label.pm",
+         "version" : 0
+      },
+      "EBI::FGPT::FuzzyRecogniser::OntologyTerm::Synonym" : {
+         "file" : "lib/EBI/FGPT/FuzzyRecogniser/OntologyTerm/Synonym.pm",
+         "version" : "0.01"
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "license" : [
+         "http://opensource.org/licenses/gpl-license.php"
+      ]
+   },
+   "version" : "0.01"
+}
